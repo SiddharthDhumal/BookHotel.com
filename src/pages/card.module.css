@@ -1,0 +1,409 @@
+.cardContainer{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto auto;
+    width:100%;
+    gap:5px;   
+}
+
+.card{
+    /* display:flex; */
+    /* flex-direction:column; */
+    /* gap:15px;
+    justify-content:center;
+    align-items:center;
+    margin:1.5rem;
+    border:1px solid grey;
+    width:50rem; */
+    /* border:1px solid grey; */
+    display:flex;
+    justify-items:stretch;
+    /* justify-content:space-between; */
+    align-items:flex-start ;
+    margin:1.5rem;
+    border-radius:9px;
+    /* height:15rem; */
+    background-color:#f9fafb;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    gap:5px;
+}
+
+
+.hotelName{
+    color:#0d9488;
+    font-size:1.5rem;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.images{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* gap:5px; */
+    position:relative;
+    /* border:1px solid green; */
+    height:100%;
+    width:60%;
+    transition: transform .2s;
+}
+
+.img{
+    /* width:25rem; */
+    object-fit:cover;
+    /* border:1px solid blue; */
+    height:100%;
+    width:100%;
+    border-top-left-radius:9px;
+    border-bottom-left-radius:9px;
+    image-rendering: pixelated; 
+    background-size: cover;
+    overflow:hidden;
+    filter: blur(2px);
+    filter:brightness(2);
+    /* filter:contrast(200%); */
+    filter: drop-shadow(16px 16px 10px rgb(236, 221, 221));
+    /* opacity:0.9; */
+    /* z-index:4; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* filter: drop-shadow(20px 20px 10px rgb(90, 104, 90)); */
+ 
+
+}
+
+.images:hover{
+    /* Zoom on Hover */
+    /* transition: transform .2s;
+    width:120%;
+    height:120%;
+    margin: 0 auto;
+    padding: 50px; */
+    transform: scale(0.95);
+    cursor:pointer;
+}
+
+.images button{
+    width:3rem;
+    height:4rem;
+    padding:0.5rem;
+    border:none;
+    /* border-radius:4px; */
+    opacity:0.8;
+    /* color:#fff; */
+    background-color:#fafafa;
+    cursor:pointer;
+ 
+}
+
+
+.btnRight{
+    position:absolute;
+    right:0;
+    z-index:4;
+}
+
+
+.btnLeft{
+    position:absolute;
+    left:0;
+    z-index:4;
+}
+
+
+.hotelInfo{
+    display:flex;
+    flex-direction:column;
+    align-items:space-between;
+    justify-content:space-between;
+    /* border:1px solid black; */
+    height:100%;
+    padding:1rem;
+    padding-right:12px;
+    width:50%;
+}
+
+/* .hotelDetails{
+
+} */
+
+.hotelCity{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    gap:15px;
+    font-size:0.8rem;
+    margin:1rem 0;
+    color:#475569;
+    /* font-weight:600; */
+    /* border:1px solid green; */
+}
+
+.addresses{
+    margin:1rem 0;
+}
+
+.overview{
+    font-size:1rem;
+    height:70%;
+    /* border:1px solid black; */
+    margin:1rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#94a3b8; 
+    
+}
+
+
+
+
+.bookNowBtn{
+    width:100%;
+    height:2.8rem;
+    background-color: #4CAF50;
+    color:white;
+    font-size:1.2rem;
+    cursor:pointer;
+    border-radius:4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bookNowBtn:hover{
+    background-color: #45a049;
+}
+
+
+
+
+
+/*For Small Devices (Phones)*/
+@media only screen and (max-width:767px){
+    body{
+      max-width:100%;
+      font-size:16px;
+      height:100%;
+    }
+
+    .cardContainer{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:5px; 
+        /* overflow:hidden;  */
+    }
+
+    .img{
+        filter: drop-shadow(16px 16px 10px rgb(236, 221, 221));
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .card{
+        display:flex;
+        justify-items:stretch;
+        /* justify-content:space-between; */
+        align-items:flex-start ;
+        margin:10px;
+        border-radius:9px;
+        height:400px;
+        background-color:#f9fafb;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        gap:5px;
+    }
+    
+    
+    .hotelName{
+    color:#0d9488;
+    font-size:12px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+    }
+
+
+
+
+.images button{
+    width:2.5rem;
+    height:3rem;
+    padding:0.5rem;
+}
+
+
+.hotelInfo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    /* border:1px solid black; */
+    height:100%;
+    /* padding:5px; */
+    padding-right:12px;
+    width:50%;
+    /* margin:5px; */
+    /* overflow:hidden; */
+    /* border:1px solid green; */
+}
+
+
+.hotelCity{
+    font-size:10px;
+    margin:5px 0;
+}
+
+.addresses{
+    margin:5px 0;
+}
+
+
+.rates_from{
+    font-size:10px;
+}
+
+.overview{
+    font-size:10px;
+    height:70%;
+    /* border:1px solid black; */
+    margin:10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#94a3b8; 
+    /* border:1px solid pink; */
+}
+
+
+.bookNowBtn{
+    width:100%;
+    height:22px;
+    background-color: #4CAF50;
+    color:white;
+    font-size:10px;
+    cursor:pointer;
+    border-radius:4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border:1px solid black; */
+  }   
+}
+  
+  /*For Medium Devices (Tablets)*/
+  @media only screen and (min-width:768px) and (max-width:991px){
+    body{
+        max-width:100%;
+        font-size:18px;
+        height:100%;
+      }
+
+      
+      .cardContainer{
+          width:100%;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          gap:5px; 
+          /* overflow:hidden;  */
+      }
+  
+      .img{
+          filter: drop-shadow(16px 16px 10px rgb(236, 221, 221));
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+  
+      .card{
+          display:flex;
+          justify-items:stretch;
+          /* justify-content:space-between; */
+          align-items:flex-start ;
+          margin:10px;
+          border-radius:9px;
+          height:400px;
+          background-color:#f9fafb;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          gap:5px;
+      }
+      
+      
+      .hotelName{
+      color:#0d9488;
+      font-size:14px;
+      text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+      }
+  
+  
+  
+  
+  .images button{
+      width:2.5rem;
+      height:3rem;
+      padding:0.5rem;
+  }
+  
+  
+  .hotelInfo{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-between;
+      height:100%;
+      padding-right:12px;
+      width:50%;
+  }
+  
+  
+  .hotelCity{
+      font-size:12px;
+      margin:5px 0;
+  }
+  
+  .addresses{
+      margin:5px 0;
+  }
+  
+  
+  .rates_from{
+      font-size:12px;
+  }
+  
+  .overview{
+      font-size:12px;
+      height:70%;
+      /* border:1px solid black; */
+      margin:10px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color:#94a3b8; 
+      /* border:1px solid pink; */
+  }
+  
+  
+  .bookNowBtn{
+      width:100%;
+      height:30px;
+      background-color: #4CAF50;
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+      border-radius:4px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      /* border:1px solid black; */
+    }   
+  }
+  
+  
+  /*For Large Devices (Desktops)*/
+  
+  @media only screen and (min-width:992px){
+    body{
+        max-width:100%;
+        font-size:20px;
+        /* height:100%; */
+      }
+  }
+  
+  
+  /*For Extra Large Devices (Large Desktops)*/
+  
+  @media only screen and (min-width:1200px){
+    /* body{
+        max-width:100%;
+        font-size:22px;
+      } */
+  } 

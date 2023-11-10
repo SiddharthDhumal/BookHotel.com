@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+body{
+    /* background-color:#fda4af; */
+    font-family:'Poppins',sans-serif;
+}
+
+.h3Login{
+    font-size:1.8rem;
+    letter-spacing:1px;
+    /* color:#57534e; */
+    color:#fafafa;
+    margin-bottom:0.2rem;
+}
+
+.pSignup{
+    font-size:1rem;
+    letter-spacing: 2px;
+}
+
+
+.login{
+    /* border:1px solid black; */
+    margin:5rem auto;
+    width:45%;
+    height:100%;
+
+}
+
+.signup{
+    text-decoration:none;
+}
+
+
+.form{
+    /* padding:2rem 8rem; */
+    text-align:center;
+    /* border:1px solid black; */
+    height:100%;
+    width:100%;
+    /* background-color: #f2f2f2; */
+    background-color:#93c5fd;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.input{
+    display:block;
+    padding:0.2rem 1.2rem;
+    background-color:azure;
+    margin:1.4rem auto;
+    width:80%;
+    height:2.5rem;
+    font-size:medium;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom:1.8rem;
+}
+
+.input:focus{
+    outline:none;
+    height:3rem;
+    width:82%;
+}
+
+.button{
+    display:block;
+    padding:0.2rem 1.2rem;
+    background-color: #4CAF50;
+    color:#fff;
+    margin:1.4rem auto;
+    width:80%;
+    border: 1px solid #ccc;
+    height:2.5rem;
+    font-size:medium;
+    cursor:pointer;
+    border-radius:5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.button:hover{
+    background-color: #45a049;
+    /* height:3rem;
+    width:82%; */
+}
+
+
+.checkbox{
+   width:80%;
+   height:1.2rem;
+   display:flex;
+   justify-content:left;
+   align-items:center;
+   gap:15px;
+   margin:1.4rem auto;
+   /* border:1px solid black; */
+}
+
+.checkbox input {
+    box-shadow:none;
+    padding:0;
+    margin:0;
+    height:15px;
+    width:15px;
+}
+
+
+.dashboard{
+    text-decoration:none;
+    /* color:#fff; */
+    color:black;
+    font-size:medium;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:2rem;
+}
+
+
+
+
+
+
+/*For Small Devices (Phones)*/
+@media only screen and (max-width:767px){
+    body{
+      max-width:100%;
+      font-size:16px;
+      /* height:100%; */
+    }
+    
+    
+.login{
+    /* border:1px solid black; */
+    margin:5rem auto;
+    width:90%;
+    height:70vh;
+}
+
+
+.dashboard{
+    font-size:18px;
+    font-weight:600;
+}
+
+
+
+
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    text-align:center;
+    height:100%;
+    width:100%;
+    background-color:#93c5fd;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    padding: 20px;
+} 
+
+.checkbox{
+    width:80%;
+    height:1rem;
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    gap:15px;
+    margin:1.4rem auto;
+    /* border:1px solid black; */
+ }
+
+ .checkboxlabel{
+    font-size:13px;
+    width:80%;
+    /* border:1px solid green; */
+    /* height:0.9rem; */
+    text-align:left;
+ }
+
+}
+  
+  /*For Medium Devices (Tablets)*/
+  @media only screen and (min-width:768px) and (max-width:991px){
+    body{
+        max-width:100%;
+        font-size:18px;
+        /* height:100%; */
+      }
+      
+      
+  .login{
+      /* border:1px solid black; */
+      margin:5rem auto;
+      width:90%;
+      height:70vh;
+  }
+  
+  
+  .dashboard{
+      font-size:18px;
+      font-weight:600;
+  }
+  
+  
+  
+  
+  .form{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+      text-align:center;
+      height:100%;
+      width:100%;
+      background-color:#93c5fd;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      border-radius: 5px;
+      padding: 20px;
+  } 
+  
+  .checkbox{
+      width:80%;
+      height:1rem;
+      display:flex;
+      justify-content:left;
+      align-items:center;
+      gap:15px;
+      margin:1.4rem auto;
+      /* border:1px solid black; */
+   }
+  
+   .checkboxlabel{
+      font-size:18px;
+      width:80%;
+      /* border:1px solid green; */
+      /* height:0.9rem; */
+      text-align:left;
+   }
+  
+    
+  }
+  
+  
+  /*For Large Devices (Desktops)*/
+  
+  @media only screen and (min-width:992px){
+    /* body{
+        max-width:100%;
+        font-size:20px;
+      }
+      
+      
+  .login{
+      margin:5rem auto;
+      width:90%;
+      height:50%;
+  }
+  
+  
+  .dashboard{
+      font-size:20px;
+      font-weight:600;
+  }
+  
+  
+  
+  
+  .form{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+      text-align:center;
+      height:100%;
+      width:100%;
+      background-color:#93c5fd;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      border-radius: 5px;
+      padding: 20px;
+  } 
+  
+  .checkbox{
+      width:80%;
+      height:1rem;
+      display:flex;
+      justify-content:left;
+      align-items:center;
+      gap:15px;
+      margin:1.4rem auto;
+   }
+  
+   .checkboxlabel{
+      font-size:20px;
+      width:80%;
+      text-align:left;
+   } */
+
+   
+/* 
+   .button{
+    display:block;
+    padding:0.2rem 1.2rem;
+    background-color: #4CAF50;
+    color:#fff;
+    margin:1.4rem auto;
+    width:80%;
+    border: 1px solid #ccc;
+    height:3rem;
+    font-size:medium;
+    cursor:pointer;
+    border-radius:5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   }
+   */
+  }
+  
+  
+  /*For Extra Large Devices (Large Desktops)*/
+  
+  @media only screen and (min-width:1200px){
+   
+  } 

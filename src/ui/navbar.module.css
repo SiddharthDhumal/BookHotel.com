@@ -1,0 +1,253 @@
+
+
+.navbar{
+    /* border-bottom:1px solid grey; */
+    padding:1.2rem 3rem;
+    /* background-color:#fafaf9; */
+    /* background-color:#6ee7b7; */
+    background-color:#059669;
+   
+    position: -webkit-sticky;
+    position: sticky;
+    /* opacity:0.8; */
+    top: 0;
+    z-index:5;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+.navUl{
+    display:flex;
+    justify-content:space-between;
+    list-style-type:none;
+    align-items:center;
+  
+}
+
+.sign{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+} 
+
+.links{
+    text-decoration:none;
+    font-size:1.2rem;
+    /* color:black; */
+    color:#fafafa;
+}
+
+
+
+
+
+
+/*For Small Devices (Phones)*/
+@media only screen and (max-width:767px){
+    body{
+      max-width:100%;
+      font-size:16px;
+      /* height:100%; */
+    }
+
+    .navbar{
+        width:100%;
+        background-color:#059669;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index:5;
+        padding:1.2rem 2rem;
+        /* border:1px solid black; */
+        /* background-color:red; */
+        /* margin:0 auto;     */
+    }
+
+    .navUl{
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+       gap:5px;
+       /* border:1px solid black; */
+       text-align:center;
+       width:100%;
+    }
+
+    .home{
+        width:10%;
+        margin:0 10px;
+        display:none;
+    }
+
+    
+    .sign{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    width:20%;
+    text-align:center;
+    } 
+
+    .links{
+        font-size:16px;
+    }
+
+    .searchbar{
+       position:absolute;
+       bottom:5px;
+       width:80%;
+    }
+}
+  
+  /*For Medium Devices (Tablets)*/
+  @media only screen and (min-width:768px) and (max-width:991px){
+    .navbar{
+        width:100%;
+        padding:1.2rem 3rem;
+        background-color:#059669;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index:5;
+        padding:1.2rem 3rem;
+        /* background-color:greenyellow; */
+    }
+
+    body{
+        max-width:100%;
+        font-size:16px;
+        /* height:100%; */
+      }
+  
+      /* .navbar{
+          width:100%;
+          background-color:#059669;
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          z-index:5;
+          padding:1.2rem 2rem;
+          /* border:1px solid black; */
+          /* margin:0 auto;     */
+      /* } */
+  
+      .navUl{
+         display:flex;
+         justify-content:space-between;
+         align-items:center;
+         gap:5px;
+         /* border:1px solid black; */
+         text-align:center;
+         width:100%;
+      }
+  
+      /* .home{
+          width:10%;
+          margin:0 10px;
+          display:none;
+      } */
+  
+      
+      .sign{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:15px;
+      width:20%;
+      text-align:center;
+      } 
+  
+      .links{
+          font-size:16px;
+      }
+  
+      .searchbar{
+         position:absolute;
+         bottom:5px;
+         width:80%;
+      }
+  }
+  
+  
+  /*For Large Devices (Desktops)*/
+  
+  @media only screen and (min-width:992px){
+    /* .navbar{
+        width:100%;
+        padding:1.2rem 3rem;
+        background-color:#059669;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index:5;
+        padding:1.2rem 3rem;
+      
+    } */
+
+    body{
+        /* max-width:100%;
+        font-size:16px; */
+        /* height:100%; */
+      }
+  
+      /* .navbar{
+          width:100%;
+          background-color:#059669;
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          z-index:5;
+          padding:1.2rem 2rem;
+          /* border:1px solid black; */
+          /* margin:0 auto;     */
+      /* } */
+  
+      .navUl{
+         /* display:flex;
+         justify-content:space-between;
+         align-items:center;
+         gap:5px; */
+         /* border:1px solid black; */
+         /* text-align:center;
+         width:100%; */
+      }
+  
+      /* .home{
+          width:10%;
+          margin:0 10px;
+          display:none;
+      } */
+  
+/*       
+      .sign{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:15px;
+      width:20%;
+      text-align:center;
+      border:1px solid black;
+      }  */
+  
+      /* .links{
+          font-size:16px;
+      }
+  
+      .searchbar{
+         position:absolute;
+         bottom:5px;
+         width:80%;
+      } */
+  }
+  
+  
+  /*For Extra Large Devices (Large Desktops)*/
+  
+  @media only screen and (min-width:1200px){
+
+  } 
